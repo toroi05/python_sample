@@ -13,3 +13,5 @@ elif op == '/':
 	total=num / num2
 
 print (num,op,num2,"=",total)
+
+#this is a sample of simple calculator using python
