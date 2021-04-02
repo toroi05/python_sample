@@ -1,2 +1,2 @@
 # python_sample
-This is just a simple calculator using python <3 
+Sample python code <3  
