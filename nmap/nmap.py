@@ -15,4 +15,4 @@ for host in nmScan.all_hosts():
         lport = nmScan[host][proto].keys()
         lport.sort()
         for port in lport:
-            print('port : %s\tstate : %s' % (port, nmScan[host][proto][port]['state'])
+            print('port : %s\tstate : %s' % (port, nmScan[host][proto][port]['state']))
