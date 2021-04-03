@@ -1,3 +1,1 @@
-#nmap integrate using python
-
-pip3 install -r
+pip3 install -r requirements.txt
