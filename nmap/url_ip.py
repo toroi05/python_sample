@@ -20,18 +20,3 @@ while True:
     	ip_entered=socket.gethostbyname(ip_entered)
     	print("[+] Scanning ",ip_entered,"(",url,")")
     	break
-
-port_entered_valid = port_entered_pattern.search(port_entered.replace(" ",""))
-if port_entered_valid:
-        port_min = int(port_entered_valid.group(1))
-        port_max = int(port_entered_valid.group(2))
-        
-        
-x = nmap.PortScanner()
-for port in range(min_port, max_port + 1):
-    try:
-        result = x.scan(ip_entered, str(port))
-        port_status = (result['scan'][ip_add_entered]['tcp'][port]['state'])
-        print(f"Port {port} is {port_status}")
-    except:
-        print(f"Cannot scan port {port}.")
