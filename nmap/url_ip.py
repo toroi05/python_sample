@@ -6,12 +6,9 @@ ip_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 port_entered_pattern = re.compile("([0-9]+)-([0-9]+)")
 #------------------------------------------------------------------
 nm=nmap.PortScanner()
-#while True:
 ip_entered = input("[IP/URL] Enter URL/IP address : ")
-    #port_entered = input("[PORT] Enter range port to scan (ex: 80-443) ")
 if ip_pattern.search(ip_entered): 
- print("[+] Scanning ",ip_entered)
-    
+ print("[+] Scanning ",ip_entered)    
 else:
  ip_add=socket.gethostbyname(ip_entered)
  print("[+] Scanning ",ip_entered,"(",ip_add,")")
