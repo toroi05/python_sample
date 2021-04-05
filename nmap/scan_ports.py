@@ -3,7 +3,6 @@ import nmap
 import re
 #-------------------format for ipv4 address/port-------------------
 ip_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
-port_entered_pattern = re.compile("([0-9]+)-([0-9]+)")
 #------------------------------------------------------------------
 nm=nmap.PortScanner()
 ip_entered = input("[IP/URL] Enter URL/IP address : ")
