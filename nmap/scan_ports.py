@@ -13,10 +13,6 @@ else:
  print("[+] Scanning ",ip_entered,"(",ip_add,")")
  ip_entered=ip_add
 
-def scanhosts():
-	scan_range = nm.scan(hosts=ip_entered)
-	print(scan_range['scan'])
-	return() 
     
 def scanhosts_output():
 	scan_range = nm.scan(hosts=ip_entered)
