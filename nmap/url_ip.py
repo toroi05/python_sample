@@ -1,14 +1,10 @@
 import socket
 import nmap
-import ipaddress
 import re
 #-------------------format for ipv4 address/port-------------------
 ip_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 port_entered_pattern = re.compile("([0-9]+)-([0-9]+)")
-min_port = 0
-max_port = 65535
 #------------------------------------------------------------------
-
 nm=nmap.PortScanner()
 #while True:
 ip_entered = input("[IP/URL] Enter URL/IP address : ")
@@ -38,7 +34,3 @@ def scanhosts_output():
 	return()
 
 scanhosts_output()
-
-#x=scan_range['scan']
-#output=json.loads(x)
-#print (x)
