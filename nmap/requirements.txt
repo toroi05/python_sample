@@ -1,1 +1,1 @@
-pip install python-nmap
+pip3 install python-nmap
