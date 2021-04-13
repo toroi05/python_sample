@@ -41,6 +41,3 @@ if __name__ == '__main__': #<-----kalau call dari program lain
 			scan(ip_add.strip(' ')) #kalau ada multiple (jumpa ,) 
 	else:
 		scan(targets) #kalau single ip/domain
-
-
-

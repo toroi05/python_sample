@@ -1,5 +1,5 @@
 import portscan
 
 
-ip = 'productiveplus.com.my'
+ip = '10.13.37.115'
 portscan.scan(ip)
