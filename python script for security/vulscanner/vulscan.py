@@ -15,3 +15,4 @@ target.scan()
 		for line in file.readlines():
 			if line.strip() in banner:
 				print ('[!!] VULNURABLE BANNER: "' + banner + '" ON PORT: ' + str(target.open_ports[count]) )
+		count=+1
