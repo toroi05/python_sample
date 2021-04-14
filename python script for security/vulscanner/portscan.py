@@ -12,7 +12,7 @@ class PortScan():
 		self.port_num = port_num
 	
 	def scan(self):    #function main utk scan
-		for port in range (1,100): #boleh tukar nak port berapa 
+		for port in range (1,self.port_num): #boleh tukar nak port berapa 
 			self.scan_port(port)
 
 	def check_ip(self):
