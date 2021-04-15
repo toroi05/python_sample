@@ -10,9 +10,8 @@ def get_login_pass(body):
 	passwd = None
 
 
-	userfields = []
-	passfields = []
-
+	userfields = [] #fields dalam database yg correspond dgn username  
+	passfields = [] #fields falam database yg correspond dgn password 
 
 	for login in userfields:
 		login_re = re.search('(%s=[^&]+)' %login, body, re.IGNORECASE)
