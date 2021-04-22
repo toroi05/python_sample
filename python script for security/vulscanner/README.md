@@ -1,9 +1,7 @@
 # run these command before proceeding
 
-```bash
-pip3 install IPy
-```
-```bash
-pip3 install sockets
-```
+
+``pip3 install IPy``
+``pip3 install sockets``
+
 
